@@ -1,0 +1,48 @@
+<div class="split left">
+  <div class="left_nav">
+    <div class="container-fluid">
+        <div class="d-flex">
+            <div class="d-flex">
+              <input class="form-control mr-sm-2 me-3" 
+                     type="search" 
+                     placeholder= "Search by Name" 
+                     (keyup)="search($event.target)">
+            </div>
+          </div>
+
+    </div>
+
+    <select (change)="filterDrop($event.target)">
+      <option>Default</option>
+      <option *ngFor="let item of position">{{item}}</option>
+    </select>
+    
+</div>
+<div>
+ 
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">S.No</th>
+              <th scope="col">Name</th>
+              <th scope="col">Desgination</th>
+              <th scope="col">Team</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of employee_data_1; let i=index">
+              <th scope="row">{{i+1}}</th>
+              <td scope="row">{{row.name}}</td>
+              <td scope="row">{{row.post}}</td>
+              <td scope="row">{{row.team}}</td>
+            </tr>
+          </tbody>
+        </table>
+ </div>
+</div>
+  
+<div class="split right">
+
+
+ 
+</div>
