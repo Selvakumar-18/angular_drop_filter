@@ -1,0 +1,72 @@
+[
+  
+   {
+        "name": "Jack",
+        "post": "Manager-1",
+        "team": "Development",
+        "child": [
+           { 
+            "name": "a",
+            "post": "dev-1",
+            "team": "Development"
+           },
+           { 
+            "name": "b",
+            "post": "dev-2",
+            "team": "Development"
+           },
+           { 
+            "name": "c",
+            "post": "dev-3",
+            "team": "Development"
+           }
+        ]
+     },
+     {
+        "name": "Smith",
+        "post": "Manager-2",
+        "team": "Testing",
+        "child": [
+           { 
+            "name": "a",
+            "post": "test-1",
+            "team": "Testing"
+           },
+           { 
+            "name": "b",
+            "post": "test-2",
+            "team": "Testing"
+           }
+        ]
+     },
+     {
+        "name": "Steve",
+        "post": "Manager-3",
+        "team": "Support",
+        "child": [
+           { 
+            "name": "a",
+            "post": "support-1",
+            "team": "Support"
+          },
+           { 
+            "name": "b",
+            "post": "support-2",
+            "team": "Support"
+          },
+           { 
+            "name": "c",
+           "post": "support-3" ,
+           "team": "Support"
+           },
+           { 
+            "name": "d",
+           "post": "support-4" ,
+           "team": "Support"
+           }
+
+        ]
+     }
+ 
+]
+

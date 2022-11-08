@@ -1,12 +1,17 @@
-import { Component } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import { Component} from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+ 
 })
 export class AppComponent {
+
+ 
+
   title = 'village_talkies';
   employee_data : any =[]
   employee_data_1 : any = []
@@ -38,12 +43,12 @@ export class AppComponent {
         console.log(this.employee_data_1)
     })
   }
-
+  
 filterDrop(event: any)
 {
-    let value = event.value.trim();
+    let value = event.value;
     this.employee_data_1 = this.employee_data.filter((data: any) => data.team == value)
-  }
+}
 
 search(event: any)
 {
@@ -62,7 +67,16 @@ search(event: any)
       console.log(this.employee_data_1)
     }
 }
+
+
 }
+
+
+
+
+
+
+
 
 
 
